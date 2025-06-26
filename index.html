@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GamerTech - Matériel Informatique Gaming</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#6200ea", secondary: "#03dac6" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Montserrat', sans-serif;
+      }
+      .hero-section {
+      background-image: url('https://static.vecteezy.com/system/resources/previews/036/053/505/non_2x/ai-generated-a-gaming-setup-with-a-racing-game-on-the-screen-gaming-chair-in-the-foreground-and-ambient-lighting-free-photo.jpeg');
+      background-size: cover;
+      background-position: center;
+      }
+      .hero-overlay {
+      background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.4) 100%);
+      }
+      input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #6200ea;
+      cursor: pointer;
+      }
+      input[type="range"]::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #6200ea;
+      cursor: pointer;
+      border: none;
+      }
+      .custom-checkbox {
+      position: relative;
+      padding-left: 28px;
+      cursor: pointer;
+      user-select: none;
+      }
+      .custom-checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      }
+      .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #f3f4f6;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      }
+      .custom-checkbox:hover input ~ .checkmark {
+      background-color: #e5e7eb;
+      }
+      .custom-checkbox input:checked ~ .checkmark {
+      background-color: #6200ea;
+      border-color: #6200ea;
+      }
+      .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      }
+      .custom-checkbox input:checked ~ .checkmark:after {
+      display: block;
+      }
+      .custom-checkbox .checkmark:after {
+      left: 7px;
+      top: 3px;
+      width: 6px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      }
+      .custom-switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+      }
+      .custom-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      }
+      .switch-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 24px;
+      }
+      .switch-slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+      }
+      input:checked + .switch-slider {
+      background-color: #6200ea;
+      }
+      input:checked + .switch-slider:before {
+      transform: translateX(26px);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <a href="#" class="text-3xl font-['Pacifico'] text-primary">ScaleX</a>
+          </div>
+          <!-- Navigation -->
+          <nav class="hidden md:flex items-center space-x-6">
+            <a
+              href="#"
+              class="font-medium text-gray-800 hover:text-primary transition-colors"
+              >PC Gaming</a
+            >
+            <a
+              href="#"
+              class="font-medium text-gray-800 hover:text-primary transition-colors"
+              >Composants</a
+            >
+            <a
+              href="#"
+              class="font-medium text-gray-800 hover:text-primary transition-colors"
+              >Périphériques</a
+            >
+            <a
+              href="#"
+              class="font-medium text-gray-800 hover:text-primary transition-colors"
+              >Configurations</a
+            >
+          </nav>
+          <!-- Search Bar -->
+          <div class="hidden md:flex items-center flex-1 max-w-md mx-6">
+            <div class="relative w-full">
+              <input
+                type="text"
+                placeholder="Rechercher un produit..."
+                class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+              />
+              <button
+                class="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary"
+              >
+                <i class="ri-search-line ri-lg"></i>
+              </button>
+            </div>
+          </div>
+          <!-- User Actions -->
+          <div class="flex items-center space-x-4">
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors"
+            >
+              <i class="ri-heart-line ri-lg"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors"
+            >
+              <i class="ri-user-line ri-lg"></i>
+            </a>
+            <a
+              href="file:///C:/Users/adamo/Desktop/site/suite.html"
+              data-readdy="true"
+              class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors relative"
+            >
+              <i class="ri-shopping-cart-line ri-lg"></i>
+              <span
+                class="absolute -top-1 -right-1 bg-primary text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center"
+                >0</span
+              >
+            </a>
+          </div>
+          <!-- Mobile Menu Button -->
+          <button
+            class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700"
+          >
+            <i class="ri-menu-line ri-lg"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section relative">
+      <div class="hero-overlay w-full h-full absolute inset-0"></div>
+      <div class="container mx-auto px-4 py-20 relative z-10">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Découvrez l'Excellence Gaming
+          </h1>
+          <p class="text-lg mb-8">
+            Des performances exceptionnelles pour une expérience de jeu
+            immersive. Configurez votre PC sur mesure avec les meilleurs
+            composants du marché.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="#"
+              class="bg-primary hover:bg-opacity-90 text-white font-medium py-3 px-6 rounded-button !rounded-button whitespace-nowrap flex items-center justify-center"
+            >
+              <i class="ri-computer-line mr-2"></i>
+              Configurer votre PC
+            </a>
+            <a
+              href="#"
+              class="bg-white hover:bg-gray-100 text-gray-900 font-medium py-3 px-6 rounded-button !rounded-button whitespace-nowrap flex items-center justify-center"
+            >
+              <i class="ri-price-tag-3-line mr-2"></i>
+              Voir les promotions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-12">
+      <!-- Categories Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900">
+          Catégories Principales
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Category 1 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://imgs.search.brave.com/y02t3AEglw6DI3Z2hjU9N7Vo753qF6X6tLEAb-q3I_Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9waWMu/Y2x1YmljLmNvbS9l/ODEwZWI2MjIxNTE3/MzYvMTIwMHg2NzUv/c21hcnQvcHJvY2Vz/c2V1ci5qcGc"
+                alt="Processeurs Gaming"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Processeurs Gaming</h3>
+              <p class="text-gray-600 mb-4">
+                Des processeurs ultra-performants pour un gaming sans compromis
+              </p>
+              <a
+                href="#"
+                class="text-primary font-medium flex items-center group-hover:underline !rounded-button whitespace-nowrap"
+              >
+                Explorer
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Category 2 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="h-48 overflow-hidden">
+              <img
+            src="https://imgs.search.brave.com/eTQ9Pq91Pd5py9K8ahQ_pxR9P26nOYMYEypnnWN9ylc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vOTEyOTc3/Mi80NDEwNC9pLzQ1/MC9kZXBvc2l0cGhv/dG9zXzQ0MTA0NjQ0/MC1zdG9jay1waG90/by1jb21wdXRlci1n/YW1lLWdyYXBoaWNz/LWNhcmQtdmlkZW9j/YXJkLmpwZw"
+                alt="Cartes Graphiques"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Cartes Graphiques</h3>
+              <p class="text-gray-600 mb-4">
+                Les dernières cartes graphiques pour des graphismes
+                époustouflants
+              </p>
+              <a
+                href="#"
+                class="text-primary font-medium flex items-center group-hover:underline !rounded-button whitespace-nowrap"
+              >
+                Explorer
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Category 3 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://imgs.search.brave.com/ITaZ4XL-DcBMdheHzV9Luu_8cs1cCPMoKeiG98sqfiE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzAz/NzMvOTA0MS84MDUx/L2ZpbGVzL3VuX2Vj/cmFuX2luY3VydmVf/cG91cl9sZV9nYW1p/bmdfMTAyNHgxMDI0/LmpwZz92PTE3MTYy/NjkxODY"
+                alt="Écrans Gaming"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Écrans Gaming</h3>
+              <p class="text-gray-600 mb-4">
+                Des écrans haute fréquence pour une fluidité optimale
+              </p>
+              <a
+                href="#"
+                class="text-primary font-medium flex items-center group-hover:underline !rounded-button whitespace-nowrap"
+              >
+                Explorer
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Category 4 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://imgs.search.brave.com/cT188wxaaxGi7HlcBdzFq6oKmhPZ_YsSDK_Ifhk2zJs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3liZXJ0ZWsuZnIv/YmxvZy93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wNS8yMDI1/MDUxM18xNzEzX0Vx/dWlwZW1lbnQtR2Ft/aW5nLUx1bWluZXV4/X3NpbXBsZV9jb21w/b3NlXzAxanY1Mzg0/ZDZlYzRzc2NxNDVq/cWdyOTFlLTEtMTIw/MHg4MDAuanBn"
+                alt="Périphériques Gaming"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Périphériques Gaming</h3>
+              <p class="text-gray-600 mb-4">
+                Claviers, souris et casques pour optimiser votre gameplay
+              </p>
+              <a
+                href="#"
+                class="text-primary font-medium flex items-center group-hover:underline !rounded-button whitespace-nowrap"
+              >
+                Explorer
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Products Section with Filters -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900">
+          Nos Produits Gaming
+        </h2>
+        <div class="flex flex-col lg:flex-row gap-8">
+          <!-- Filters Sidebar -->
+          <div class="lg:w-1/4">
+            <div class="bg-white rounded-lg shadow-md p-6 sticky top-24">
+              <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-4">Filtres</h3>
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-sm font-medium"
+                    >Affiner votre recherche</span
+                  >
+                  <button
+                    class="text-primary text-sm font-medium !rounded-button whitespace-nowrap"
+                  >
+                    Réinitialiser
+                  </button>
+                </div>
+              </div>
+              <!-- Price Range -->
+              <div class="mb-6">
+                <h4 class="font-medium mb-3">Gamme de prix</h4>
+                <div class="mb-2">
+                  <input
+                    type="range"
+                    min="0"
+                    max="5000"
+                    value="2500"
+                    class="w-full h-2 bg-gray-200 rounded-full appearance-none"
+                  />
+                </div>
+                <div class="flex justify-between text-sm text-gray-600">
+                  <span>0 €</span>
+                  <span>5000 €</span>
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <input
+                    type="text"
+                    value="0"
+                    class="w-24 px-3 py-1 border border-gray-300 rounded-button text-sm"
+                  />
+                  <span>-</span>
+                  <input
+                    type="text"
+                    value="2500"
+                    class="w-24 px-3 py-1 border border-gray-300 rounded-button text-sm"
+                  />
+                  <span>€</span>
+                </div>
+              </div>
+              <!-- Brands -->
+              <div class="mb-6">
+                <h4 class="font-medium mb-3">Marques</h4>
+                <div class="space-y-2">
+                  <label class="custom-checkbox block text-sm">
+                    ASUS ROG
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-checkbox block text-sm">
+                    MSI
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-checkbox block text-sm">
+                    Corsair
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-checkbox block text-sm">
+                    Razer
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-checkbox block text-sm">
+                    Gigabyte
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <button
+                  class="text-primary text-sm mt-2 !rounded-button whitespace-nowrap"
+                >
+                  Voir plus
+                </button>
+              </div>
+              <!-- Technical Specs -->
+              <div class="mb-6">
+                <h4 class="font-medium mb-3">Caractéristiques techniques</h4>
+                <div class="space-y-2">
+                  <label class="custom-checkbox block text-sm">
+                    RTX 4000 Series
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-checkbox block text-sm">
+                    Intel Core i9
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-checkbox block text-sm">
+                    32GB+ RAM
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-checkbox block text-sm">
+                    SSD 1TB+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-checkbox block text-sm">
+                    Écran 240Hz+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <button
+                  class="text-primary text-sm mt-2 !rounded-button whitespace-nowrap"
+                >
+                  Voir plus
+                </button>
+              </div>
+              <!-- Performance -->
+              <div class="mb-6">
+                <h4 class="font-medium mb-3">Performances</h4>
+                <div class="space-y-2">
+                  <label class="custom-checkbox block text-sm">
+                    Gaming Ultra
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-checkbox block text-sm">
+                    Gaming Haute Performance
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-checkbox block text-sm">
+                    Gaming Performance
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-checkbox block text-sm">
+                    Gaming Entrée de gamme
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <!-- User Ratings -->
+              <div class="mb-6">
+                <h4 class="font-medium mb-3">Notes utilisateurs</h4>
+                <div class="space-y-2">
+                  <label
+                    class="custom-checkbox block text-sm flex items-center"
+                  >
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                    <div class="flex text-yellow-400 ml-2">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                  </label>
+                  <label
+                    class="custom-checkbox block text-sm flex items-center"
+                  >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <div class="flex text-yellow-400 ml-2">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-line"></i>
+                    </div>
+                  </label>
+                  <label
+                    class="custom-checkbox block text-sm flex items-center"
+                  >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <div class="flex text-yellow-400 ml-2">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                    </div>
+                  </label>
+                  <label
+                    class="custom-checkbox block text-sm flex items-center"
+                  >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <div class="flex text-yellow-400 ml-2">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <!-- Apply Filters Button -->
+              <button
+                class="w-full bg-primary hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded-button !rounded-button whitespace-nowrap"
+              >
+                Appliquer les filtres
+              </button>
+            </div>
+          </div>
+          <!-- Products Grid -->
+          <div class="lg:w-3/4">
+            <!-- Sort and View Options -->
+            <div
+              class="bg-white rounded-lg shadow-md p-4 mb-6 flex flex-col sm:flex-row justify-between items-center"
+            >
+              <div class="flex items-center mb-4 sm:mb-0">
+                <span class="text-sm text-gray-600 mr-2">Trier par:</span>
+                <div class="relative">
+                  <button
+                    class="bg-white border border-gray-300 rounded-button px-4 py-2 text-sm font-medium flex items-center !rounded-button whitespace-nowrap"
+                  >
+                    Popularité
+                    <i class="ri-arrow-down-s-line ml-2"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <span class="text-sm text-gray-600">Vue:</span>
+                <button
+                  class="w-8 h-8 flex items-center justify-center text-primary bg-gray-100 rounded !rounded-button whitespace-nowrap"
+                >
+                  <i class="ri-grid-line"></i>
+                </button>
+                <button
+                  class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary rounded !rounded-button whitespace-nowrap"
+                >
+                  <i class="ri-list-check"></i>
+                </button>
+                <div class="flex items-center">
+                  <span class="text-sm text-gray-600 mr-2">Comparer</span>
+                  <label class="custom-switch">
+                    <input type="checkbox" />
+                    <span class="switch-slider"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              <!-- Product 1 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <div class="relative">
+                  <div class="h-56 overflow-hidden">
+                    <img
+                      src="https://imgs.search.brave.com/67DXDfxsQEhtdTxM2WnKvJsd--Dc2KGnSsu1CeThoZI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/Yi5wY2NvbXBvbmVu/dGVzLmNvbS93LTUz/MC01MzAvYXJ0aWNs/ZXMvMTA4Ni8xMDg2/Mjg3Ny82OTk5LXBj/Y29tLXVsdGltYXRl/LWludGVsLWNvcmUt/aTktMTM5MDBrLTY0/Z2ItcmFtLTJ0Yi1z/c2QtcnR4LTQwOTAt/d2luZG93cy0xMS1w/cm8tY2IzMzIzNjct/N2Q1MS00MGFhLWFh/ZGItODcyNmVmYTYx/MDcyLmpwZw"
+                      alt="PC Gamer Intel Core i9, RTX 4090"
+                      class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div class="absolute top-2 left-2">
+                    <span
+                      class="bg-primary text-white text-xs font-bold px-2 py-1 rounded"
+                      >NOUVEAU</span
+                    >
+                  </div>
+                  <button
+                    class="absolute top-2 right-2 w-8 h-8 bg-white bg-opacity-70 rounded-full flex items-center justify-center text-gray-600 hover:text-primary !rounded-button whitespace-nowrap"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                  <div
+                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <button
+                      class="w-full bg-primary hover:bg-opacity-90 text-white font-medium py-2 rounded-button !rounded-button whitespace-nowrap"
+                    >
+                      Ajouter au panier
+                    </button>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <div class="flex text-yellow-400 mb-2">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                    <span class="text-gray-500 text-sm ml-1">(128)</span>
+                  </div>
+                  <h3 class="text-lg font-semibold mb-2">
+                    PC Gamer Intel Core i9, RTX 4090
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    64 Go RAM, 2 To SSD
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="text-2xl font-bold text-gray-900"
+                        >4 299,99 €</span
+                      >
+                      <span class="text-sm text-gray-500 line-through ml-2"
+                        >4 599,99 €</span
+                      >
+                    </div>
+                    <span class="text-sm text-green-600 font-medium"
+                      >En stock</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center">
+                    <input type="checkbox" id="compare1" class="hidden" />
+                    <label
+                      for="compare1"
+                      class="text-sm text-gray-600 flex items-center cursor-pointer"
+                    >
+                      <span
+                        class="w-4 h-4 inline-block mr-1 border border-gray-300 rounded flex-shrink-0 relative"
+                      >
+                        <span
+                          class="absolute inset-0 hidden bg-primary rounded-sm"
+                          id="compare1-check"
+                        ></span>
+                      </span>
+                      Ajouter à la comparaison
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 2 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <div class="relative">
+                  <div class="h-56 overflow-hidden">
+                    <img
+                      src="https://imgs.search.brave.com/aBMUcLZ2mmwdCDfZnSB_HjY1x1xk_G9_w7LDpaOrgeU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b3JpZ2luLmZyL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzAz/L21zaS1tZWctYWVn/aXMtdGk1LW9yaWdp/bi1pbmZvLXN5c3Rl/bS0zLTUwMHg1MDAu/cG5nP3g5MjgxNg"
+                      alt="PC Gamer MSI"
+                      class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div class="absolute top-2 left-2">
+                    <span
+                      class="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded"
+                      >PROMO</span
+                    >
+                  </div>
+                  <button
+                    class="absolute top-2 right-2 w-8 h-8 bg-white bg-opacity-70 rounded-full flex items-center justify-center text-gray-600 hover:text-primary !rounded-button whitespace-nowrap"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                  <div
+                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <button
+                      class="w-full bg-primary hover:bg-opacity-90 text-white font-medium py-2 rounded-button !rounded-button whitespace-nowrap"
+                    >
+                      Ajouter au panier
+                    </button>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <div class="flex text-yellow-400 mb-2">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                    <span class="text-gray-500 text-sm ml-1">(94)</span>
+                  </div>
+                  <h3 class="text-lg font-semibold mb-2">
+                    PC Gamer Intel Core i7, RTX 4080 
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    32 Go RAM, 1 To SSD
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="text-2xl font-bold text-gray-900"
+                        >3 499,99 €</span
+                      >
+                      <span class="text-sm text-gray-500 line-through ml-2"
+                        >3 799,99 €</span
+                      >
+                    </div>
+                    <span class="text-sm text-green-600 font-medium"
+                      >En stock</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center">
+                    <input type="checkbox" id="compare2" class="hidden" />
+                    <label
+                      for="compare2"
+                      class="text-sm text-gray-600 flex items-center cursor-pointer"
+                    >
+                      <span
+                        class="w-4 h-4 inline-block mr-1 border border-gray-300 rounded flex-shrink-0 relative"
+                      >
+                        <span
+                          class="absolute inset-0 hidden bg-primary rounded-sm"
+                          id="compare2-check"
+                        ></span>
+                      </span>
+                      Ajouter à la comparaison
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 3 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <div class="relative">
+                  <div class="h-56 overflow-hidden">
+                    <img
+                      src="https://m.media-amazon.com/images/I/81oYGAR4EcL._AC_SY450_.jpg"
+                      alt="PC Gamer Corsair"
+                      class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <button
+                    class="absolute top-2 right-2 w-8 h-8 bg-white bg-opacity-70 rounded-full flex items-center justify-center text-gray-600 hover:text-primary !rounded-button whitespace-nowrap"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                  <div
+                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <button
+                      class="w-full bg-primary hover:bg-opacity-90 text-white font-medium py-2 rounded-button !rounded-button whitespace-nowrap"
+                    >
+                      Ajouter au panier
+                    </button>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <div class="flex text-yellow-400 mb-2">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <span class="text-gray-500 text-sm ml-1">(156)</span>
+                  </div>
+                  <h3 class="text-lg font-semibold mb-2">
+                    Corsair Voyager a1600 Ordinateur Portable Gaming
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    AMD Ryzen R7 6800HS, AMD Radeon RX 6800M, DDR5 16 Go
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="text-2xl font-bold text-gray-900"
+                        >3 299,99 €</span
+                      >
+                    </div>
+                    <span class="text-sm text-green-600 font-medium"
+                      >En stock</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center">
+                    <input type="checkbox" id="compare3" class="hidden" />
+                    <label
+                      for="compare3"
+                      class="text-sm text-gray-600 flex items-center cursor-pointer"
+                    >
+                      <span
+                        class="w-4 h-4 inline-block mr-1 border border-gray-300 rounded flex-shrink-0 relative"
+                      >
+                        <span
+                          class="absolute inset-0 hidden bg-primary rounded-sm"
+                          id="compare3-check"
+                        ></span>
+                      </span>
+                      Ajouter à la comparaison
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 4 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <div class="relative">
+                  <div class="h-56 overflow-hidden">
+                    <img
+		src="https://imgs.search.brave.com/bQB_pZnVid9vRovwz_O4JNaPjbidrNm5ErUB56IejQM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFwejd3bWh4Tkwu/anBn"
+                      alt="Écran Gaming"
+                      class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div class="absolute top-2 left-2">
+                    <span
+                      class="bg-primary text-white text-xs font-bold px-2 py-1 rounded"
+                      >NOUVEAU</span
+                    >
+                  </div>
+                  <button
+                    class="absolute top-2 right-2 w-8 h-8 bg-white bg-opacity-70 rounded-full flex items-center justify-center text-gray-600 hover:text-primary !rounded-button whitespace-nowrap"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                  <div
+                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <button
+                      class="w-full bg-primary hover:bg-opacity-90 text-white font-medium py-2 rounded-button !rounded-button whitespace-nowrap"
+                    >
+                      Ajouter au panier
+                    </button>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <div class="flex text-yellow-400 mb-2">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                    <span class="text-gray-500 text-sm ml-1">(87)</span>
+                  </div>
+                  <h3 class="text-lg font-semibold mb-2">
+                    Écran Samsung Odyssey G9
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    SAMSUNG ODYSSEY G9 49'' Ecran PC Gaming Incurvé 1000R, Dalle VA 49", Résolution DWQHD (5120 x 1440), 240 Hz
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="text-2xl font-bold text-gray-900"
+                        >1 299,99 €</span
+                      >
+                      <span class="text-sm text-gray-500 line-through ml-2"
+                        >1 499,99 €</span
+                      >
+                    </div>
+                    <span class="text-sm text-green-600 font-medium"
+                      >En stock</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center">
+                    <input type="checkbox" id="compare4" class="hidden" />
+                    <label
+                      for="compare4"
+                      class="text-sm text-gray-600 flex items-center cursor-pointer"
+                    >
+                      <span
+                        class="w-4 h-4 inline-block mr-1 border border-gray-300 rounded flex-shrink-0 relative"
+                      >
+                        <span
+                          class="absolute inset-0 hidden bg-primary rounded-sm"
+                          id="compare4-check"
+                        ></span>
+                      </span>
+                      Ajouter à la comparaison
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 5 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <div class="relative">
+                  <div class="h-56 overflow-hidden">
+                    <img
+                      src="https://imgs.search.brave.com/JrDOL2DiJKZvPsWgUV3IxUchJvTXpEQSj2230ZwvLpI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jMS5u/ZXdlZ2dpbWFnZXMu/Y29tL3Byb2R1Y3Rp/bWFnZS9uYjMwMC9B/REZSRDIzMDYxNjE0/NkNGVkVELmpwZw"
+                      alt="Carte Graphique"
+                      class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div class="absolute top-2 left-2">
+                    <span
+                      class="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded"
+                      >PROMO</span
+                    >
+                  </div>
+                  <button
+                    class="absolute top-2 right-2 w-8 h-8 bg-white bg-opacity-70 rounded-full flex items-center justify-center text-gray-600 hover:text-primary !rounded-button whitespace-nowrap"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                  <div
+                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <button
+                      class="w-full bg-primary hover:bg-opacity-90 text-white font-medium py-2 rounded-button !rounded-button whitespace-nowrap"
+                    >
+                      Ajouter au panier
+                    </button>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <div class="flex text-yellow-400 mb-2">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                    <span class="text-gray-500 text-sm ml-1">(64)</span>
+                  </div>
+                  <h3 class="text-lg font-semibold mb-2">
+                    ASUS ROG Strix GeForce RTX 4090
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    24 Go GDDR6X, PCIe 4.0, HDMI 2.1, DisplayPort 1.4a
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="text-2xl font-bold text-gray-900"
+                        >1 899,99 €</span
+                      >
+                      <span class="text-sm text-gray-500 line-through ml-2"
+                        >2 099,99 €</span
+                      >
+                    </div>
+                    <span class="text-sm text-green-600 font-medium"
+                      >En stock</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center">
+                    <input type="checkbox" id="compare5" class="hidden" />
+                    <label
+                      for="compare5"
+                      class="text-sm text-gray-600 flex items-center cursor-pointer"
+                    >
+                      <span
+                        class="w-4 h-4 inline-block mr-1 border border-gray-300 rounded flex-shrink-0 relative"
+                      >
+                        <span
+                          class="absolute inset-0 hidden bg-primary rounded-sm"
+                          id="compare5-check"
+                        ></span>
+                      </span>
+                      Ajouter à la comparaison
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 6 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <div class="relative">
+                  <div class="h-56 overflow-hidden">
+                    <img
+                      src="https://imgs.search.brave.com/rzSAw2gl834B1cOtKA3LrGIFtfSrxYuo0LM_Esp3jzQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZWNo/LXBsYWNlLmZyL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzA1/L1Rlc3QtUmF6ZXIt/SHVudHNtYW4tRWxp/dGUtQ2xhdmllci1N/ZWNhbmlxdWUtUkdC/LmpwZw"
+                      alt="Clavier Gaming"
+                      class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <button
+                    class="absolute top-2 right-2 w-8 h-8 bg-white bg-opacity-70 rounded-full flex items-center justify-center text-gray-600 hover:text-primary !rounded-button whitespace-nowrap"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                  <div
+                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <button
+                      class="w-full bg-primary hover:bg-opacity-90 text-white font-medium py-2 rounded-button !rounded-button whitespace-nowrap"
+                    >
+                      Ajouter au panier
+                    </button>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <div class="flex text-yellow-400 mb-2">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                    <span class="text-gray-500 text-sm ml-1">(112)</span>
+                  </div>
+                  <h3 class="text-lg font-semibold mb-2">
+                    Clavier Razer Huntsman Elite
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    Mécanique, Switches optiques, RGB Chroma, Repose-poignet
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="text-2xl font-bold text-gray-900"
+                        >179,99 €</span
+                      >
+                    </div>
+                    <span class="text-sm text-green-600 font-medium"
+                      >En stock</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center">
+                    <input type="checkbox" id="compare6" class="hidden" />
+                    <label
+                      for="compare6"
+                      class="text-sm text-gray-600 flex items-center cursor-pointer"
+                    >
+                      <span
+                        class="w-4 h-4 inline-block mr-1 border border-gray-300 rounded flex-shrink-0 relative"
+                      >
+                        <span
+                          class="absolute inset-0 hidden bg-primary rounded-sm"
+                          id="compare6-check"
+                        ></span>
+                      </span>
+                      Ajouter à la comparaison
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Comparison Section -->
+      <section class="mb-16 hidden" id="comparison-section">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900">
+          Comparaison de Produits
+        </h2>
+        <div class="bg-white rounded-lg shadow-md overflow-x-auto">
+          <table class="w-full min-w-max">
+            <thead>
+              <tr class="bg-gray-50">
+                <th
+                  class="p-4 border-b text-left font-semibold text-gray-700 w-1/5"
+                >
+                  Caractéristiques
+                </th>
+                <th
+                  class="p-4 border-b text-center font-semibold text-gray-700 w-1/5"
+                >
+                  <div class="relative">
+                    <img
+                      src="https://readdy.ai/api/search-image?query=high-end%20gaming%20PC%20with%20RGB%20lighting%2C%20glass%20panel%20showing%20internal%20components%2C%20professional%20product%20photography%2C%20clean%20white%20background%2C%20detailed%2C%20high%20resolution%2C%20no%20text&width=150&height=150&seq=12&orientation=squarish"
+                      alt="PC Gamer ASUS ROG"
+                      class="w-24 h-24 object-cover mx-auto mb-2"
+                    />
+                    <span class="block text-lg"
+                      >PC Gamer ASUS ROG Strix G35CZ</span
+                    >
+                    <button
+                      class="absolute top-0 right-0 w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-gray-900 !rounded-button whitespace-nowrap"
+                    >
+                      <i class="ri-close-line"></i>
+                    </button>
+                  </div>
+                </th>
+                <th
+                  class="p-4 border-b text-center font-semibold text-gray-700 w-1/5"
+                >
+                  <div class="relative">
+                    <img
+                      src="https://m.media-amazon.com/images/I/81oYGAR4EcL._AC_SY450_.jpg"
+                      alt="PC Gamer MSI"
+                      class="w-24 h-24 object-cover mx-auto mb-2"
+                    />
+                    <span class="block text-lg"
+                      >PC Gamer i7-13700K, RTX 4080</span
+                    >
+                    <button
+                      class="absolute top-0 right-0 w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-gray-900 !rounded-button whitespace-nowrap"
+                    >
+                      <i class="ri-close-line"></i>
+                    </button>
+                  </div>
+                </th>
+                <th
+                  class="p-4 border-b text-center font-semibold text-gray-700 w-1/5"
+                >
+                  <div class="relative">
+                    <img
+                      src="https://m.media-amazon.com/images/I/81oYGAR4EcL._AC_SY450_.jpg"
+                      alt="PC Gamer Corsair"
+                      class="w-24 h-24 object-cover mx-auto mb-2"
+                    />
+                    <span class="block text-lg">Corsair Voyager a1600 Ordinateur Portable Gaming</span>
+                    <button
+                      class="absolute top-0 right-0 w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-gray-900 !rounded-button whitespace-nowrap"
+                    >
+                      <i class="ri-close-line"></i>
+                    </button>
+                  </div>
+                </th>
+                <th
+                  class="p-4 border-b text-center font-semibold text-gray-700 w-1/5"
+                >
+                  <button
+                    class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 px-4 rounded-button flex items-center justify-center mx-auto !rounded-button whitespace-nowrap"
+                  >
+                    <i class="ri-add-line mr-1"></i>
+                    Ajouter
+                  </button>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-4 border-b font-medium text-gray-700">Prix</td>
+                <td class="p-4 border-b text-center">4 299,99 €</td>
+                <td class="p-4 border-b text-center">3 499,99 €</td>
+                <td class="p-4 border-b text-center">3 299,99 €</td>
+                <td class="p-4 border-b text-center">-</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b font-medium text-gray-700">
+                  Processeur
+                </td>
+                <td class="p-4 border-b text-center">Intel Core i9-13900K</td>
+                <td class="p-4 border-b text-center">Intel Core i7-13700K</td>
+                <td class="p-4 border-b text-center">Intel Core i9-12900K</td>
+                <td class="p-4 border-b text-center">-</td>
+              </tr>
+              <tr>
+                <td class="p-4 border-b font-medium text-gray-700">
+                  Carte graphique
+                </td>
+                <td class="p-4 border-b text-center">NVIDIA RTX 4090 24 Go</td>
+                <td class="p-4 border-b text-center">NVIDIA RTX 4080 16 Go</td>
+                <td class="p-4 border-b text-center">
+                  NVIDIA RTX 3080 Ti 12 Go
+                </td>
+                <td class="p-4 border-b text-center">-</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b font-medium text-gray-700">
+                  Mémoire RAM
+                </td>
+                <td class="p-4 border-b text-center">64 Go DDR5 5600 MHz</td>
+                <td class="p-4 border-b text-center">32 Go DDR5 5200 MHz</td>
+                <td class="p-4 border-b text-center">32 Go DDR5 4800 MHz</td>
+                <td class="p-4 border-b text-center">-</td>
+              </tr>
+              <tr>
+                <td class="p-4 border-b font-medium text-gray-700">Stockage</td>
+                <td class="p-4 border-b text-center">2 To SSD NVMe PCIe 4.0</td>
+                <td class="p-4 border-b text-center">1 To SSD NVMe PCIe 4.0</td>
+                <td class="p-4 border-b text-center">1 To SSD NVMe PCIe 4.0</td>
+                <td class="p-4 border-b text-center">-</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b font-medium text-gray-700">
+                  Refroidissement
+                </td>
+                <td class="p-4 border-b text-center">Watercooling 360mm</td>
+                <td class="p-4 border-b text-center">Watercooling 240mm</td>
+                <td class="p-4 border-b text-center">Watercooling compact</td>
+                <td class="p-4 border-b text-center">-</td>
+              </tr>
+              <tr>
+                <td class="p-4 border-b font-medium text-gray-700">
+                  Alimentation
+                </td>
+                <td class="p-4 border-b text-center">1200W 80+ Platinum</td>
+                <td class="p-4 border-b text-center">1000W 80+ Gold</td>
+                <td class="p-4 border-b text-center">750W 80+ Platinum</td>
+                <td class="p-4 border-b text-center">-</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b font-medium text-gray-700">
+                  Système d'exploitation
+                </td>
+                <td class="p-4 border-b text-center">Windows 11 Pro</td>
+                <td class="p-4 border-b text-center">Windows 11 Home</td>
+                <td class="p-4 border-b text-center">Windows 11 Home</td>
+                <td class="p-4 border-b text-center">-</td>
+              </tr>
+              <tr>
+                <td class="p-4 border-b font-medium text-gray-700">Garantie</td>
+                <td class="p-4 border-b text-center">3 ans</td>
+                <td class="p-4 border-b text-center">2 ans</td>
+                <td class="p-4 border-b text-center">2 ans</td>
+                <td class="p-4 border-b text-center">-</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 font-medium text-gray-700">Note utilisateurs</td>
+                <td class="p-4 text-center">
+                  <div class="flex text-yellow-400 justify-center">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                </td>
+                <td class="p-4 text-center">
+                  <div class="flex text-yellow-400 justify-center">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                </td>
+                <td class="p-4 text-center">
+                  <div class="flex text-yellow-400 justify-center">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                </td>
+                <td class="p-4 text-center">-</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="p-4"></td>
+                <td class="p-4 text-center">
+                  <button
+                    class="bg-primary hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded-button w-full !rounded-button whitespace-nowrap"
+                  >
+                    Ajouter au panier
+                  </button>
+                </td>
+                <td class="p-4 text-center">
+                  <button
+                    class="bg-primary hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded-button w-full !rounded-button whitespace-nowrap"
+                  >
+                    Ajouter au panier
+                  </button>
+                </td>
+                <td class="p-4 text-center">
+                  <button
+                    class="bg-primary hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded-button w-full !rounded-button whitespace-nowrap"
+                  >
+                    Ajouter au panier
+                  </button>
+                </td>
+                <td class="p-4 text-center">-</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <!-- Categories -->
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Catégories</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >PC Gaming</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Processeurs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Cartes Graphiques</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Écrans Gaming</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Périphériques</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Configurations</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Customer Service -->
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Service Client</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Mon Compte</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Suivi de Commande</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Retours et Garanties</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Aide & Support</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- About -->
+          <div>
+            <h3 class="text-xl font-semibold mb-4">À Propos</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Qui Sommes-Nous</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Nos Magasins</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Carrières</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Partenaires</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Mentions Légales</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Newsletter -->
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+            <p class="text-gray-400 mb-4">
+              Inscrivez-vous pour recevoir nos offres exclusives et les
+              dernières nouveautés.
+            </p>
+            <form class="mb-4">
+              <div class="flex">
+                <input
+                  type="email"
+                  placeholder="Votre email"
+                  class="w-full px-4 py-2 rounded-l-button border-none focus:outline-none text-gray-900"
+                />
+                <button
+                  type="submit"
+                  class="bg-primary hover:bg-opacity-90 text-white px-4 py-2 rounded-r-button !rounded-button whitespace-nowrap"
+                >
+                  S'inscrire
+                </button>
+              </div>
+            </form>
+            <h3 class="text-xl font-semibold mb-4">Suivez-nous</h3>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-youtube-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-discord-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-6">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+              <p class="text-gray-400 text-sm">
+                © 2025 GamerTech. Tous droits réservés.
+              </p>
+            </div>
+            <div class="flex items-center space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors text-sm"
+                >Politique de Confidentialité</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors text-sm"
+                >Conditions d'Utilisation</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors text-sm"
+                >Cookies</a
+              >
+            </div>
+          </div>
+          <div
+            class="mt-4 flex flex-wrap justify-center md:justify-start gap-3"
+          >
+            <div
+              class="w-10 h-6 flex items-center justify-center bg-gray-800 rounded"
+            >
+              <i class="ri-visa-fill text-xl"></i>
+            </div>
+            <div
+              class="w-10 h-6 flex items-center justify-center bg-gray-800 rounded"
+            >
+              <i class="ri-mastercard-fill text-xl"></i>
+            </div>
+            <div
+              class="w-10 h-6 flex items-center justify-center bg-gray-800 rounded"
+            >
+              <i class="ri-paypal-fill text-xl"></i>
+            </div>
+            <div
+              class="w-10 h-6 flex items-center justify-center bg-gray-800 rounded"
+            >
+              <i class="ri-apple-fill text-xl"></i>
+            </div>
+            <div
+              class="w-10 h-6 flex items-center justify-center bg-gray-800 rounded"
+            >
+              <i class="ri-bank-card-fill text-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="toast-style">
+      const style = document.createElement("style");
+      style.textContent = `
+      .toast-container {
+      position: fixed;
+      top: 5rem;
+      right: 1rem;
+      z-index: 9999;
+      }
+      .toast {
+      display: flex;
+      align-items: center;
+      background: white;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      margin-bottom: 1rem;
+      max-width: 24rem;
+      transform: translateX(120%);
+      transition: transform 0.3s ease-in-out;
+      }
+      .toast.show {
+      transform: translateX(0);
+      }
+      .toast-image {
+      width: 3rem;
+      height: 3rem;
+      object-fit: cover;
+      border-radius: 0.25rem;
+      margin-right: 1rem;
+      }
+      .toast-content {
+      flex: 1;
+      }
+      .toast-title {
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 0.25rem;
+      }
+      .toast-price {
+      color: #6200ea;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      }
+      .toast-link {
+      color: #6200ea;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      }
+      .toast-link:hover {
+      text-decoration: underline;
+      }
+      `;
+      document.head.appendChild(style);
+    </script>
+    <script id="cart-toast-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        // Create toast container
+        const toastContainer = document.createElement("div");
+        toastContainer.className = "toast-container";
+        document.body.appendChild(toastContainer);
+        // Initialize cart counter
+        let cartCount = 0; // Starting value from HTML
+        const cartCounter = document.querySelector(".absolute.bg-primary");
+        // Function to show toast
+        function showToast(product) {
+          const toast = document.createElement("div");
+          toast.className = "toast";
+          toast.innerHTML = `
+      <img src="${product.image}" alt="${product.name}" class="toast-image">
+      <div class="toast-content">
+      <div class="toast-title">${product.name}</div>
+      <div class="toast-price">${product.price}</div>
+      <a href="#" class="toast-link">Voir le panier</a>
+      </div>
+      `;
+          toastContainer.appendChild(toast);
+          // Trigger reflow
+          toast.offsetHeight;
+          // Show toast
+          requestAnimationFrame(() => {
+            toast.classList.add("show");
+          });
+          // Remove toast after 5 seconds
+          setTimeout(() => {
+            toast.style.transform = "translateX(120%)";
+            setTimeout(() => {
+              toastContainer.removeChild(toast);
+            }, 300);
+          }, 5000);
+        }
+        // Function to update cart counter
+        function updateCartCounter() {
+          cartCount++;
+          cartCounter.textContent = cartCount;
+        }
+        // Add click event listeners to all "Add to Cart" buttons
+        document.addEventListener("click", function (e) {
+          if (
+            e.target.matches("button") &&
+            e.target.textContent.trim() === "Ajouter au panier"
+          ) {
+            const productCard = e.target.closest(".bg-white.rounded-lg");
+            if (productCard) {
+              const product = {
+                image: productCard.querySelector("img").src,
+                name: productCard.querySelector(".text-lg.font-semibold").textContent,
+                price: productCard.querySelector(".text-2xl.font-bold").textContent,
+              };
+              showToast(product);
+              updateCartCounter();
+            }
+          }
+        });
+      });
+    </script>
+    <script id="product-comparison-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        // Checkbox handling for comparison
+        const compareCheckboxes = document.querySelectorAll('[id^="compare"]');
+        const comparisonSection = document.getElementById("comparison-section");
+        compareCheckboxes.forEach((checkbox) => {
+          checkbox.addEventListener("change", function () {
+            const checkmark = document.getElementById(`${this.id}-check`);
+            if (this.checked) {
+              checkmark.classList.remove("hidden");
+            } else {
+              checkmark.classList.add("hidden");
+            }
+            // Check if any checkbox is checked to show comparison section
+            const anyChecked = Array.from(compareCheckboxes).some((cb) => cb.checked);
+            if (anyChecked) {
+              comparisonSection.classList.remove("hidden");
+            } else {
+              comparisonSection.classList.add("hidden");
+            }
+          });
+        });
+      });
+    </script>
+    <script id="pagination-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const paginationButtons = document.querySelectorAll(".pagination-btn");
+        const productsGrid = document.querySelector(
+          ".grid.grid-cols-1.md\\:grid-cols-2.xl\\:grid-cols-3.gap-6",
+        );
+        function updatePaginationState(clickedButton) {
+          paginationButtons.forEach((button) => {
+            button.classList.remove("bg-primary", "text-white");
+            button.classList.add(
+              "border",
+              "border-gray-300",
+              "text-gray-600",
+              "hover:border-primary",
+              "hover:text-primary",
+            );
+          });
+          clickedButton.classList.remove(
+            "border",
+            "border-gray-300",
+            "text-gray-600",
+            "hover:border-primary",
+            "hover:text-primary",
+          );
+          clickedButton.classList.add("bg-primary", "text-white");
+        }
+        function loadNewProducts(pageNumber) {
+          const page2Products = [
+            {
+              name: "PC Gamer Alienware Aurora R15",
+              specs: "AMD Ryzen 9 7950X, RTX 4080, 64 Go RAM, 2 To SSD",
+              price: "3 899,99 €",
+              oldPrice: "4 199,99 €",
+              rating: 4.5,
+              reviews: 73,
+              image:
+                "https://readdy.ai/api/search-image?query=modern%20gaming%20desktop%20with%20unique%20design%2C%20RGB%20lighting%2C%20professional%20product%20photography%2C%20clean%20white%20background%2C%20detailed%2C%20high%20resolution%2C%20no%20text&width=600&height=450&seq=15&orientation=landscape",
+            },
+            {
+              name: "PC Gamer Razer Tomahawk",
+              specs: "Intel Core i7-13700KF, RTX 4070 Ti, 32 Go RAM, 1 To SSD",
+              price: "2 799,99 €",
+              oldPrice: "",
+              rating: 4,
+              reviews: 45,
+              image:
+                "https://readdy.ai/api/search-image?query=compact%20gaming%20PC%20with%20minimalist%20design%2C%20RGB%20lighting%2C%20professional%20product%20photography%2C%20clean%20white%20background%2C%20detailed%2C%20high%20resolution%2C%20no%20text&width=600&height=450&seq=16&orientation=landscape",
+            },
+            {
+              name: "PC Gamer Acer Predator Orion 7000",
+              specs: "Intel Core i9-13900K, RTX 4080, 64 Go RAM, 2 To SSD",
+              price: "3 599,99 €",
+              oldPrice: "3 899,99 €",
+              rating: 5,
+              reviews: 89,
+              image:
+                "https://readdy.ai/api/search-image?query=gaming%20PC%20with%20aggressive%20design%2C%20RGB%20lighting%2C%20professional%20product%20photography%2C%20clean%20white%20background%2C%20detailed%2C%20high%20resolution%2C%20no%20text&width=600&height=450&seq=17&orientation=landscape",
+            },
+          ];
+          productsGrid.innerHTML = page2Products
+            .map(
+              (product) => `
+      <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+      <div class="relative">
+      <div class="h-56 overflow-hidden">
+      <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+      </div>
+      <button class="absolute top-2 right-2 w-8 h-8 bg-white bg-opacity-70 rounded-full flex items-center justify-center text-gray-600 hover:text-primary !rounded-button whitespace-nowrap">
+      <i class="ri-heart-line"></i>
+      </button>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+      <button class="w-full bg-primary hover:bg-opacity-90 text-white font-medium py-2 rounded-button !rounded-button whitespace-nowrap">
+      Ajouter au panier
+      </button>
+      </div>
+      </div>
+      <div class="p-4">
+      <div class="flex text-yellow-400 mb-2">
+      ${Array(Math.floor(product.rating)).fill('<i class="ri-star-fill"></i>').join("")}
+      ${product.rating % 1 ? '<i class="ri-star-half-fill"></i>' : ""}
+      ${Array(5 - Math.ceil(product.rating))
+        .fill('<i class="ri-star-line"></i>')
+        .join("")}
+      <span class="text-gray-500 text-sm ml-1">(${product.reviews})</span>
+      </div>
+      <h3 class="text-lg font-semibold mb-2">${product.name}</h3>
+      <p class="text-gray-600 text-sm mb-3">${product.specs}</p>
+      <div class="flex justify-between items-center">
+      <div>
+      <span class="text-2xl font-bold text-gray-900">${product.price}</span>
+      ${product.oldPrice ? `<span class="text-sm text-gray-500 line-through ml-2">${product.oldPrice}</span>` : ""}
+      </div>
+      <span class="text-sm text-green-600 font-medium">En stock</span>
+      </div>
+      <div class="mt-3 flex items-center">
+      <input type="checkbox" id="compare${Math.random().toString(36).substr(2, 9)}" class="hidden">
+      <label class="text-sm text-gray-600 flex items-center cursor-pointer">
+      <span class="w-4 h-4 inline-block mr-1 border border-gray-300 rounded flex-shrink-0 relative">
+      <span class="absolute inset-0 hidden bg-primary rounded-sm"></span>
+      </span>
+      Ajouter à la comparaison
+      </label>
+      </div>
+      </div>
+      </div>
+      `,
+            )
+            .join("");
+        }
+        document.addEventListener("click", function (e) {
+          if (e.target.matches(".pagination-btn")) {
+            e.preventDefault();
+            const pageNumber = parseInt(e.target.textContent);
+            updatePaginationState(e.target);
+            loadNewProducts(pageNumber);
+            window.scrollTo({
+              top: document.querySelector(".products-section").offsetTop - 100,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+    <script id="price-range-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const priceRange = document.querySelector('input[type="range"]');
+        const minPriceInput = document.querySelectorAll('input[type="text"]')[0];
+        const maxPriceInput = document.querySelectorAll('input[type="text"]')[1];
+        const resetButton = document.querySelector(
+          "button.text-primary.text-sm.font-medium",
+        );
+        const checkboxes = document.querySelectorAll(
+          '.custom-checkbox input[type="checkbox"]',
+        );
+        function showResetToast() {
+          const toastContainer = document.querySelector(".toast-container");
+          const toast = document.createElement("div");
+          toast.className = "toast";
+          toast.innerHTML = `
+      <div class="toast-content">
+      <div class="toast-title">Les filtres ont été réinitialisés</div>
+      </div>
+      `;
+          toastContainer.appendChild(toast);
+          requestAnimationFrame(() => {
+            toast.classList.add("show");
+          });
+          setTimeout(() => {
+            toast.style.transform = "translateX(120%)";
+            setTimeout(() => {
+              toastContainer.removeChild(toast);
+            }, 300);
+          }, 3000);
+        }
+        function resetFilters() {
+          priceRange.value = 5000;
+          minPriceInput.value = 0;
+          maxPriceInput.value = 5000;
+          checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+            const checkmark = document.getElementById(`${checkbox.id}-check`);
+            if (checkmark) {
+              checkmark.classList.add("hidden");
+            }
+          });
+          const comparisonSection = document.getElementById("comparison-section");
+          if (comparisonSection) {
+            comparisonSection.classList.add("hidden");
+          }
+          showResetToast();
+        }
+        resetButton.addEventListener("click", resetFilters);
+        priceRange.addEventListener("input", function () {
+          maxPriceInput.value = this.value;
+        });
+        maxPriceInput.addEventListener("input", function () {
+          priceRange.value = this.value;
+        });
+      });
+    </script>
+  </body>
+</html>
